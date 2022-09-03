@@ -1,9 +1,9 @@
 import { combineReducers } from '@reduxjs/toolkit'
 import { enableMapSet } from 'immer'
-// import mapReducer from './mapSlice'
+import exerciseReducer from './exerciseSlice'
 
 const rootReducer = combineReducers({
-  // map: mapReducer,
+  exercise: exerciseReducer,
 })
 
 enableMapSet()

@@ -3,10 +3,11 @@ import { Typography, Box, Stack } from '@mui/material'
 
 import HorizontalScrollbar from './HorizontalScrollbar'
 import Loader from './Loader'
+import { Exercise } from '../types/exercise'
 
 interface SimilarExercisesProps {
-  targetMuscleExercises: any[]
-  equipmentExercises: any[]
+  targetMuscleExercises: Exercise[]
+  equipmentExercises: Exercise[]
 }
 
 const SimilarExercises = ({

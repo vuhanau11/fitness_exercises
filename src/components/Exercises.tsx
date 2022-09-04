@@ -48,7 +48,7 @@ const Exercises = () => {
     indexOfLastExercise
   )
 
-  const paginate = (event: any, value: number) => {
+  const paginate = (_event: any, value: number) => {
     setCurrentPage(value)
 
     window.scrollTo({ top: 1800, behavior: 'smooth' })
@@ -77,7 +77,7 @@ const Exercises = () => {
         ))}
       </Stack>
       <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems="center">
-        {exercises.length > 9 && (
+        {exercises.length > 6 && (
           <Pagination
             color="standard"
             shape="rounded"
@@ -85,7 +85,7 @@ const Exercises = () => {
             count={Math.ceil(exercises.length / exercisesPerPage)}
             page={currentPage}
             onChange={paginate}
-            size="large"
+            size="medium"
           />
         )}
       </Stack>

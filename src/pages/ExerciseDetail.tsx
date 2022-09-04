@@ -15,8 +15,10 @@ import SimilarExercises from '../components/SimilarExercises'
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState<Exercise | null>(null)
   const [exerciseVideos, setExerciseVideos] = useState([])
-  const [targetMuscleExercises, setTargetMuscleExercises] = useState([])
-  const [equipmentExercises, setEquipmentExercises] = useState([])
+  const [targetMuscleExercises, setTargetMuscleExercises] = useState<
+    Exercise[]
+  >([])
+  const [equipmentExercises, setEquipmentExercises] = useState<Exercise[]>([])
   const { id } = useParams()
 
   useEffect(() => {

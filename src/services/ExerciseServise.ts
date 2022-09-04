@@ -15,7 +15,7 @@ export const getExercisesForBodyPart = async (
   return await http.get(`/exercises/bodyPart/${bodyPart}`)
 }
 
-export const getExerciseDetail = async (id: string): Promise<any> => {
+export const getExerciseDetail = async (id: string): Promise<Exercise> => {
   return await http.get(`/exercises/exercise/${id}`)
 }
 
@@ -23,10 +23,14 @@ export const getExerciseVideoData = async (name: string): Promise<any> => {
   return await youtubeHttp.get(`/search?query=${name}`)
 }
 
-export const getExerciseTargetMuscle = async (target: string): Promise<any> => {
+export const getExerciseTargetMuscle = async (
+  target: string
+): Promise<Exercise[]> => {
   return await http.get(`/exercises/target/${target}`)
 }
 
-export const getEquimentExercises = async (equipment: string): Promise<any> => {
+export const getEquimentExercises = async (
+  equipment: string
+): Promise<Exercise[]> => {
   return await http.get(`/exercises/equipment/${equipment}`)
 }

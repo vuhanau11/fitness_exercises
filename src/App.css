@@ -110,6 +110,11 @@ body {
   text-decoration: none;
 }
 
+.exercise-video img{
+  width: 330px;
+  height: 200px;
+}
+
 @media screen and (max-width:1200px) {
   .detail-image {
     width: 300px;
@@ -126,6 +131,14 @@ body {
     position: static !important;
   }
 
+  .left-arrow{
+    padding-left: 5px !important;
+  }
+
+  .right-arrow{
+    padding-right: 5px !important;
+  }
+
   .hero-banner-img {
     display: none;
   }
@@ -139,6 +152,16 @@ body {
     height: 300px;
   }
 
+}
+
+@media screen and (max-width:600px) {
+  .exercise-video {
+    width: 280px;
+  }
+  
+  .exercise-video img {
+    width: 250px;
+  }
 }
 
 @media screen and (max-width:400px) {

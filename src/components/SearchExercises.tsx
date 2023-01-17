@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Box, Button, Stack, TextField, Typography } from '@mui/material'
 
-import { getAllBodyParts, getAllExercises } from '../services/ExerciseServise'
+import { getAllBodyParts, getAllExercises } from '../services/ExerciseService'
 import { Exercise } from '../types/exercise'
 import { useDispatch } from 'react-redux'
 import { setExercises } from '../slices/exerciseSlice'

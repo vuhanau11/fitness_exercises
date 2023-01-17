@@ -5,11 +5,11 @@ import Detail from '../components/Detail'
 import { Exercise } from '../types/exercise'
 import ExerciseVideos from '../components/ExerciseVideos'
 import {
-  getEquimentExercises,
+  getEquipmentExercises,
   getExerciseDetail,
   getExerciseTargetMuscle,
   getExerciseVideoData,
-} from '../services/ExerciseServise'
+} from '../services/ExerciseService'
 import SimilarExercises from '../components/SimilarExercises'
 
 const ExerciseDetail = () => {
@@ -38,10 +38,10 @@ const ExerciseDetail = () => {
       )
       setTargetMuscleExercises(targetMuscleExercisesData)
 
-      const equimentExercisesData = await getEquimentExercises(
+      const equipmentExercisesData = await getEquipmentExercises(
         exerciseDetailData.equipment
       )
-      setEquipmentExercises(equimentExercisesData)
+      setEquipmentExercises(equipmentExercisesData)
     }
 
     fetchExercisesData()

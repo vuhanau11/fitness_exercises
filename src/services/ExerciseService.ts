@@ -29,7 +29,7 @@ export const getExerciseTargetMuscle = async (
   return await http.get(`/exercises/target/${target}`)
 }
 
-export const getEquimentExercises = async (
+export const getEquipmentExercises = async (
   equipment: string
 ): Promise<Exercise[]> => {
   return await http.get(`/exercises/equipment/${equipment}`)

@@ -9,7 +9,7 @@ import { Exercise } from '../types/exercise'
 import {
   getAllExercises,
   getExercisesForBodyPart,
-} from '../services/ExerciseServise'
+} from '../services/ExerciseService'
 import { setExercises } from '../slices/exerciseSlice'
 
 const Exercises = () => {
